@@ -9,41 +9,6 @@ import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import './App.css';
 
-// const returnClarifaiRequestOptions = (imageUrl) => {
-//   const PAT = 'c9c141232d4d4c479b0be4048acd6866';
-//   const USER_ID = 'clarifai';
-//   const APP_ID = 'main';
-//   const MODEL_ID = 'face-detection';
-//   const IMAGE_URL = imageUrl;
-//   const raw = JSON.stringify({
-//     "user_app_id": {
-//         "user_id": USER_ID,
-//         "app_id": APP_ID
-//     },
-//     "inputs": [
-//         {
-//             "data": {
-//                 "image": {
-//                     "url": IMAGE_URL
-//                     // "base64": IMAGE_BYTES_STRING
-//                 }
-//             }
-//         }
-//     ]
-//   });
-
-//   const requestOptions = {
-//     method: 'POST',
-//     headers: {
-//         'Accept': 'application/json',
-//         'Authorization': 'Key ' + PAT
-//     },
-//     body: raw
-//   };
-
-//   return requestOptions;
-// }
-
 const intialState = () => {
   return {input: '',
     imageUrl: '',
